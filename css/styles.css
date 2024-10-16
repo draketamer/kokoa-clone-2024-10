@@ -28,6 +28,10 @@ body {
 
 }
 
+input:focus {
+    outline: none;
+}
+
 #login-form {
     display: flex;
     flex-direction: column;
@@ -39,14 +43,16 @@ body {
     border: none;
     padding: 15px 0;
     font-size: 18px;
-    border-bottom: 2px solid rgba(0,0,0,0.2);
+    /* border-bottom: 2px solid rgba(0,0,0,0.2); */
     margin-bottom: 25px;
-    transition: border-color 0.4s ease-in-out;
+    /* transition: border-color 0.4s ease-in-out; */
 }
 
-input:focus {
-    outline: none;
+#login-form input:not([type="submit"]) {    
+    transition: border-color 0.4s ease-in-out;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
 }
+
 
 #login-form input::placeholder {
     color: rgba(0,0,0,0.4);
@@ -56,6 +62,18 @@ input:focus {
     border-color: var(--yellow);
 }
 
+#login-form input[type="submit"] {
+   background-color: var(--yellow);
+   cursor: pointer;
+   padding: 20px 0;
+   border-radius: 5px;
+   /* font-size: 16px; */
+}
 
-
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 13px;
+}
 
