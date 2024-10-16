@@ -10,39 +10,230 @@ body {
     background-color: #374151;
     font-family: "Open Sans", sans-serif;
 }
+span {
+    display: inline-block;
+}
 #outline {
-    padding: 30px;
-    height: 100vh;
-    width: 400px;
+    padding: 70px 30px 30px 30px;
+    height: 760px;
+    width: 350px;
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: flex-start; /* 위쪽에 배치 */
+    align-items: flex-start;
     border: 5px solid #00c6ad;
     background-color: white;
     position: absolute;
+    flex-wrap: wrap;
 }
 #headbox {
-    height: calc(100vh /9);
-    width: 380px;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-startd;
+    
+    flex-wrap: wrap;
+}
+#x-mark {
+    height: 100%;
+    width: 100px;
+    }
+.fa-xmark {
+    font-size: 100px;
+        
+    }
+#playlist{
+    height: 100%;
+    width: 200px;
+    box-sizing: border-box;
+    font-size:25px;
+    font-weight: 800;
+    font-style: normal;
+    display: flex;
+    }
+#main-music-box {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+#main-album-image {
+    background-color: #ffbd11;
+    height: 140px;
+    width: 140px;
+    border: 2px solid black;
+    border-radius: 20px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: skyblue;
 }
-#x-mark {
-    height: calc(100vh /18);
-    width: 100px;
-    }
-.fa-xmark {
-        font-size: 30px;
-    }
-#playlist{
-    height: calc(100vh /18);
-    width: 260px;
-    font-size:25px;
+.fa-image {
+    font-size: 60px;
+    color: white;
+}
+
+#main-title-musician {
+    height: 85%;
+    width: 190px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+#main-title-musician span:nth-child(1), #main-title-musician span:nth-child(2) {
+    font-size: 40px;
     font-weight: 800;
-  font-style: normal;
-    }
+    font-style: normal;
+    
+}
+#main-title-musician span:nth-child(3) {
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    align-items: end;
+}
+
+#btn-play-heart-plus {
+    height: 140px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+
+#btn-play {
+    height: 45%;
+    width: 160px;
+    border: 2px solid black;
+    box-shadow: 0px 5px 0px black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-play {
+    font-size: 40px;
+    font-weight: 800;
+    color: black;
+}
+
+#btn-play span {
+    font-size: 25px;
+    color: black;
+}
+
+.btn-circle {
+    height: 45%;
+    width: 65px;
+    border: 2px solid black;
+    box-shadow: 0px 5px 0px black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-heart {
+    font-size: 50px;
+    color: black;
+}
+
+.fa-plus {
+    font-size: 35px;
+    color: black;
+}
+
+#music-list {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 위쪽에 배치 */
+    align-items: flex-start;
+    
+    position: relative;
+    flex-wrap: wrap;
+}
+.album-unit{
+    height: 80px;
+    width: 100%;
+    padding: 5px 5px 5px 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+    flex-wrap: wrap;
+}
+
+.album-image {
+    margin: 0 10px 0 0;
+    height: 55px;
+    width: 55px;
+    border: 2px solid black;
+    border-radius: 10px;
+   
+}
+
+.album-unit:nth-child(1) .album-image {
+    background-color: #f85a2a;
+}
+
+.album-unit:nth-child(2) .album-image {
+    background-color: #ff89bb;
+}
+
+.album-unit:nth-child(3) .album-image {
+    background-color: #1947e5;
+}
+
+.album-unit:nth-child(4) .album-image {
+    background-color: #00c6ad;
+}
+
+.music-musician {
+    height: 55px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    
+}
+
+.music {
+    margin: 0;
+    height: 35px;
+    width: 200px;
+    font-size: 22px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.musician {
+    margin: 0;
+    height: 15px;
+    width: 220px;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    align-items: end;
+}
 
 
 
