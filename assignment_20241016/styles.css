@@ -1,0 +1,48 @@
+/* DONT DELETE THIS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+/* WRITE YOUR CODE BELOW */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #374151;
+    font-family: "Open Sans", sans-serif;
+}
+#outline {
+    padding: 30px;
+    height: 100vh;
+    width: 400px;
+    display: flex;
+    justify-content: left;
+    border: 5px solid #00c6ad;
+    background-color: white;
+    position: absolute;
+}
+#headbox {
+    height: calc(100vh /9);
+    width: 380px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+}
+#x-mark {
+    height: calc(100vh /18);
+    width: 100px;
+    }
+.fa-xmark {
+        font-size: 30px;
+    }
+#playlist{
+    height: calc(100vh /18);
+    width: 260px;
+    font-size:25px;
+    font-weight: 800;
+  font-style: normal;
+    }
+
+
+
